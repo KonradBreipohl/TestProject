@@ -1,15 +1,12 @@
 Usage
 =====
 
-.. _installation:
+For a detailed usage guide, please refer to the Jupyter notebooks linked below:
 
-Installation
-------------
+- [Link to Notebook 1](<URL to notebook>)
+- [Link to Notebook 2](<URL to notebook>)
+...
 
-To install the project locally with pip, use:
-
-.. code-block:: console
-    $ pip install git+https://github.com/DimitriWeiss/up-ac.git
 
 Functions
 ------------    
