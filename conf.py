@@ -58,5 +58,5 @@ sys.path.insert(0, os.path.abspath('.'))
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_build_dir = '_READTHEDOCS_OUTPUT/html'
+html_build_dir = '_readthedocs/html'
 #autoapi_dirs = ['up_ac_files/AC_interface']
