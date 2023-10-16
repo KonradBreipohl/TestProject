@@ -15,3 +15,5 @@ Functions
 ------------    
 
 .. autofunction:: up-ac.AC_interface.get_available_engines
+.. autofunction:: up-ac.AC_interface.get_feedback
+.. autofunction:: up-ac.AC_interface.run_engine_config()
