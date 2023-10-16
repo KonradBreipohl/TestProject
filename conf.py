@@ -25,6 +25,9 @@ intersphinx_mapping = {
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
 intersphinx_disabled_domains = ['std']
+autosummary_generate = [
+    'up-ac.AC_interface.py',
+]
 
 templates_path = ['_templates']
 
