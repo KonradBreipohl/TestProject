@@ -8,9 +8,8 @@ For a detailed usage guide, please refer to the Jupyter notebooks linked below:
 ...
 
 
-Functions
+General Functions
 ------------    
 
-.. autofunction:: up-ac.AC_interface.get_available_engines
-.. autofunction:: up-ac.AC_interface.get_feedback
-.. autofunction:: up-ac.AC_interface.run_engine_config()
+.. automodule:: up-ac.AC_interface
+    :members
