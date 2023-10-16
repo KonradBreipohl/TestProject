@@ -59,12 +59,3 @@ extensions = [
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_build_dir = '_READTHEDOCS_OUTPUT/html'
-import os
-
-if 'READTHEDOCS' in os.environ:
-    # on Read the Docs, output to the expected location
-    output_dir = os.path.join(os.environ.get('READTHEDOCS_OUTPUT', '.'), 'html')
-    html_theme_path = [output_dir]
-else:
-    # default Sphinx location for local builds
-    output_dir = '_build/html'
