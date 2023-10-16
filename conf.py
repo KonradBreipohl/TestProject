@@ -26,7 +26,7 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ['std']
 autosummary_generate = [
-    'up-ac.AC_interface.py',
+    'up-ac.AC_interface',
 ]
 
 templates_path = ['_templates']
