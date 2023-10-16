@@ -8,7 +8,7 @@ Installation
 
 To install the project locally with pip, use:
 
-.. code-block:: bash
+.. code-block:: console
     pip install git+https://github.com/DimitriWeiss/up-ac.git
 
 Functions
