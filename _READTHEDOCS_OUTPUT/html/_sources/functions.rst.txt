@@ -1,4 +1,4 @@
 functions
 ==========
-.. automodule:: up_ac_files.AC_interface
+.. autoclass:: up_ac_files.AC_interface.GenericACInterface
     :members:
