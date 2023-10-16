@@ -12,3 +12,4 @@ Welcome to Project's documentation!
    usage
    engines
    ac_tools
+   functions
