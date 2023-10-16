@@ -10,13 +10,5 @@ Welcome to Project's documentation!
 
    installation
    usage
-   engines/lpg
-   engines/fast-downward
-   engines/enhsp
-   engines/symk
-   engines/tamer
-   engines/pyperplan
-   engines/fmap
-   ac_tools/irace
-   ac_tools/oat
-   ac_tools/smac
+   engines
+   ac_tools
