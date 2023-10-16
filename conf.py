@@ -44,7 +44,7 @@ templates_path = ['_templates']
 
 #import sphinx_rtd_theme
 
-html_theme = "Alabaster"
+#html_theme = "Alabaster"
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 extensions = [
