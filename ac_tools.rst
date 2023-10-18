@@ -1,3 +1,5 @@
+.. _ac-tools:
+
 AC Tools
 ========
 
