@@ -14,4 +14,3 @@ If you want more in-depth information about the different configuration tools as
    usage
    engines
    ac_tools
-   functions

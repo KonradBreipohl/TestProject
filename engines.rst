@@ -1,6 +1,6 @@
 .. _engines:
 
-Engines
+Planning engines
 =======
 
 LPG

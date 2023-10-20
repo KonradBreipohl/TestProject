@@ -1,6 +1,6 @@
 .. _ac-tools:
 
-AC Tools
+Algorithm configuration tools
 ========
 
 IRACE
