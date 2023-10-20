@@ -7,7 +7,7 @@ Requirements
 ------------
 
 Most of the dependencies will be installed with the pip package.
-You will however still need an installation of swig and r-base.
+You will however still need an installation of swig and r-base as well as a recent version of java.
 It is highly recommended to use linux.
 
 You can install our project via pip:

@@ -1,7 +1,7 @@
 .. _engines:
 
 Planning engines
-=======
+==================
 
 LPG
 ---
@@ -38,7 +38,7 @@ symk
 ----
 
 **Support Features:**
-- State-of-the-art classical optimal and top-k planner based on symbolic search extending Fast Downward. It can find a single optimal plan or a set of k different best plans with the lowest cost for a given planning task【52†source】.
+- State-of-the-art classical optimal and top-k planner based on symbolic search extending Fast Downward. It can find a single optimal plan or a set of k different best plans with the lowest cost for a given planning task.
 
 tamer
 ------

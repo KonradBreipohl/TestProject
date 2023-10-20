@@ -1,16 +1,28 @@
 .. _ac-tools:
 
 Algorithm configuration tools
-========
+============================
 
 IRACE
 -----
-Content about IRACE...
+.. automodule:: up_ac_files.Irace_interface
+    :members:
+
+.. automodule:: up_ac_files.Irace_configurator
+    :members:
 
 OAT
 ---
-Content about OAT...
+.. automodule:: up_ac_files.OAT_interface
+    :members:
+
+.. automodule:: up_ac_files.OAT_configurator
+    :members:    
 
 SMAC
 ----
-Content about SMAC...
+.. automodule:: up_ac_files.Smac_interface
+    :members:
+
+.. automodule:: up_ac_files.Smac_configurator
+    :members:    
