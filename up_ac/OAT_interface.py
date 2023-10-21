@@ -24,8 +24,8 @@ class OATInterface(GenericACInterface):
         Transform a configuration to the UP engine format.
 
         Parameters:
-            engine (str): The name of the engine.
-            configuration (dict): Parameter names with values.
+        - engine (str): The name of the engine.
+        - configuration (dict): Parameter names with values.
 
         Returns:
             dict: The transformed configuration.
@@ -137,24 +137,24 @@ class OATInterface(GenericACInterface):
         """
         Generate the OAT parameter tree in XML format.
 
-        OAT does not handle forbidden parameter value combinations.
+        OAT does not handle forbidden parameter value combinations.  |
         OAT can handle multiple parent and 1 child conditionals,
-        but not one parent multiple children conditionals.
-        We naively just take the first one in the list.
-        OAT does not support conditionals that are conditional.
+        but not one parent multiple children conditionals.  |
+        We naively just take the first one in the list. |
+        OAT does not support conditionals that are conditional. |
         We leave them out naively.
-        OAT does not support conditionals with value ranges.
-        We naively only use the first value.
+        OAT does not support conditionals with value ranges. |
+        We naively only use the first value. |
 
         Note: Although this is suboptimal, invalid configurations will
         lead to crash or bad results such that OAT will rate them
         as subpar.
 
         Parameters:
-            param_space (ConfigSpace.ConfigurationSpace): ConfigSpace object.
+        - param_space (ConfigSpace.ConfigurationSpace): ConfigSpace object.
 
         Returns:
-            str: OAT parameter tree in XML format.
+        - str: OAT parameter tree in XML format.
         """
 
         param_file = '<?xml version="1.0" encoding="utf-8" ?>\n'
@@ -193,15 +193,15 @@ class OATInterface(GenericACInterface):
             Set conditional relations between parameters.
 
             Parameters:
-                children (dict): Child parameters.
-                param_file (str): OAT parameter tree to be saved in XML.
-                to_set (list): Parameter names to still be included.
-                parents (dict): Parent parameters.
-                tab (str): Indicates depth of tree (\t).
+            - children (dict): Child parameters.
+            - param_file (str): OAT parameter tree to be saved in XML.
+            - to_set (list): Parameter names to still be included.
+            - parents (dict): Parent parameters.
+            - tab (str): Indicates depth of tree (\t).
 
             Returns:
-                str: OAT parameter tree to be saved in XML.
-                list: Updated parameter names to still be included.
+            - str: OAT parameter tree to be saved in XML.
+            - list: Updated parameter names to still be included.
             """
             for child, value in children.items():
                 if child in to_set:
