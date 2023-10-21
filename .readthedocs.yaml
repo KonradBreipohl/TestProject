@@ -13,8 +13,6 @@ build:
   apt_packages:
     - swig
     - r-base
-  before:
-    - Rscript -e "install.packages('irace', repos='https://cloud.r-project.org')"
 
 sphinx:
   configuration: conf.py
