@@ -10,14 +10,14 @@ For a detailed usage guide, please refer to the Jupyter notebook linked below:
 .. _gen-func:
 General functions
 ------------------
-.. automodule:: up_ac_files.AC_interface
+.. automodule:: up_ac.AC_interface
     :members:
 
-.. automodule:: up_ac_files.configurators
+.. automodule:: up_ac.configurators
     :members:
 
-.. autoattribute:: up_ac_files.AC_interface
+.. autoattribute:: up_ac.AC_interface
     :members:
 
-.. autoattribute:: up_ac_files.configurators
+.. autoattribute:: up_ac.configurators
     :members:
