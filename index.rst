@@ -10,9 +10,6 @@ For information about the available configuration tools and engines have a look 
    :maxdepth: 2
    :caption: Contents:
 
-   TESTNOTEBOOK
-   irkernel_installer
-   irace_installer
    installation
    usage
    engines

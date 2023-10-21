@@ -65,4 +65,5 @@ sys.path.insert(0, os.path.abspath('.'))
 html_static_path = ['_static']
 html_build_dir = '$READTHEDOCS_OUTPUT/html/'
 nbsphinx_execute = 'always'
+autodoc_mock_imports = ["irace"]
 #autoapi_dirs = ['up_ac_files/AC_interface']
