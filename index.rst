@@ -14,3 +14,4 @@ For information about the available configuration tools and engines have a look 
    usage
    engines
    ac_tools
+   irace_installer

@@ -49,7 +49,8 @@ html_theme = "sphinx_rtd_theme"
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
+    'nbsphinx'
 ]
 import os
 import sys
@@ -63,4 +64,5 @@ os.system("Rscript -e \"install.packages('irace', repos='https://cloud.r-project
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_build_dir = '$READTHEDOCS_OUTPUT/html/'
+nbsphinx_execute = 'always'
 #autoapi_dirs = ['up_ac_files/AC_interface']
