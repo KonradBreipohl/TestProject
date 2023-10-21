@@ -56,7 +56,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
-os.system("Rscript -e \"install.packages('irace', repos='https://cloud.r-project.org')\"")
+#os.system("Rscript -e \"install.packages('irace', repos='https://cloud.r-project.org')\"")
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
