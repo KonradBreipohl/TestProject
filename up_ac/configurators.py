@@ -37,9 +37,9 @@ class Configurator():
         Print feedback from the engine.
 
         Parameters:
-            engine (str): Name of the engine.
-            instance (str): Name of the instance.
-            feedback: Feedback from the engine.
+        - engine (str): Name of the engine.
+        - instance (str): Name of the instance.
+        - feedback: Feedback from the engine.
         """
         print(f'** Feedback of {engine} on instance\n**' +
               f' {instance}\n** is {feedback}\n\n')
@@ -49,7 +49,7 @@ class Configurator():
         Save instance features.
 
         Parameters:
-            instance_features (dict): Instance names and their features in lists.
+        - instance_features (dict): Instance names and their features in lists.
         """
         self.instance_features = instance_features
         print('\nSetting instance features.\n')
