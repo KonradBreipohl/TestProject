@@ -47,6 +47,8 @@ symk
 tamer
 ------
 
+Content about tamer...
+
 pyperplan
 ---------
 
@@ -68,3 +70,14 @@ pyperplan
 
 fmap
 ----
+
+**Support Features:**
+
+- Distributed heuristic search.
+- Forward partial-order planning scheme allowing parallel action planning among agents.
+- State-based estimates utilizing frontier state.
+
+**Advantages:**
+
+- Enhanced solution plan quality due to parallel action planning.
+- Accurate state-based estimates for improved planning.
