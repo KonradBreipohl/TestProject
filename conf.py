@@ -63,5 +63,35 @@ sys.path.insert(0, os.path.abspath('.'))
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_build_dir = '$READTHEDOCS_OUTPUT/html/'
-autodoc_mock_imports = ["irace"]
+autodoc_mock_imports = ["antlr4-python3-runtime", "click", 
+                        "cloudpickle", "ConfigSpace", 
+                        "dask", "dask-jobqueue", 
+                        "dill", "distributed", 
+                        "emcee", "exceptiongroup", 
+                        "fsspec", "grpcio", 
+                        "grpcio-tools", "importlib-metadata", 
+                        "iniconfig", "irace", 
+                        "Jinja2", "joblib", 
+                        "locket", "MarkupSafe", 
+                        "more-itertools", "msgpack", 
+                        "multipledispatch", "networkx", 
+                        "numpy", "packaging", 
+                        "pandas", "partd", 
+                        "Pebble", "pluggy", 
+                        "protobuf", "psutil", 
+                        "pynisher", "pyparsing", 
+                        "pyperplan", "pyrfr", 
+                        "pytamer", "pytest", 
+                        "PyYAML", "regex", 
+                        "rpy2", "scikit-learn", 
+                        "scipy", "smac", 
+                        "sortedcontainers", "swig", 
+                        "tarski", "tblib", 
+                        "threadpoolctl", "tomli", 
+                        "toolz", "tornado", 
+                        "typing-extensions", "unified-planning", 
+                        "up-aries", "up-enhsp", "up-fast-downward", 
+                        "up-fmap", "up-lpg", "up-pyperplan", "up-symk", 
+                        "up-tamer", "urllib3", "wget", 
+                        "wheel", "zict", "zipp"]
 #autoapi_dirs = ['up_ac_files/AC_interface']
