@@ -22,7 +22,9 @@ Planning Engines
 
 If one or more of the planning engines that are integrated in this algorithm configuration 
 extension is not available on your system, you can install it via:
+
 .. code-block:: bash
+
     pip install --pre unified-planning[<engine_name>]
 
 Currently these planning engines are integrated and confirmed to be working:

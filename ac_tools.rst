@@ -13,7 +13,9 @@ Please note that you need to have a working installation of R on your system.
 Then install the irace R package via the R console by running:
 
 .. code-block:: R
+
     install.packages("irace", repos = "https://cloud.r-project.org")
+
 
 The algorithm configuration implementation will then access irace via the python package rpy2.
 
@@ -37,6 +39,7 @@ While it is able to run on a single computing node it also supports multiple wor
 Before being able to use OAT first execute the following code after having installed up-ac.
 
 .. code-block:: bash
+    
     up_ac.utils.download_OAT.get_OAT()
     up_ac.utils.download_OAT.copy_call_engine_OAT()
 
@@ -48,6 +51,7 @@ Once you have run these functions, you do not need to run them again, except if 
 To remove the OAT directory run:
 
 .. code-block:: bash
+
     up_ac.utils.download_OAT.delete_OAT()
 
 For more details on OAT refer to `this page <https://docs.optano.com/algorithm.tuner/current/>`_.

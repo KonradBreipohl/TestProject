@@ -80,11 +80,11 @@ class Configurator():
         Generate the function to run the engine and get feedback.
 
         Parameters:
-            gaci (ACInterface): Algorithm Configuration interface object.
-            engine (str): Engine name.
-            metric (str): Metric, either 'runtime' or 'quality'.
-            mode (str): Type of planning.
-            gray_box (bool, optional): True if gray box to be used.
+            - gaci (ACInterface): Algorithm Configuration interface object.
+            - engine (str): Engine name.
+            - metric (str): Metric, either 'runtime' or 'quality'.
+            - mode (str): Type of planning.
+            - gray_box (bool, optional): True if gray box to be used.
 
         Returns:
             function or None: Planner feedback function or None if not supported.
@@ -109,21 +109,21 @@ class Configurator():
         Set up algorithm configuration scenario.
 
         Parameters:
-            engine (str): Engine name.
-            param_space (ConfigSpace): ConfigSpace object.
-            gaci (ACInterface): AC interface object.
-            configuration_time (int, optional): Overall configuration time budget.
-            n_trials (int, optional): Maximum number of engine evaluations.
-            min_budget (int, optional): Minimum number of instances to use.
-            max_budget (int, optional): Maximum number of instances to use.
-            crash_cost (int, optional): Cost to use if the engine fails.
-            planner_timelimit (int, optional): Maximum runtime per evaluation.
-            n_workers (int, optional): Number of cores to utilize.
-            instances (list, optional): Problem instance paths.
-            instance_features (dict, optional): Instance names and lists of features.
-            metric (str, optional): Optimization metric.
-            popSize (int, optional): Population size of configs per generation (OAT).
-            evlaLimit (int, optional): Maximum number of evaluations (OAT).
+            * engine (str): Engine name.
+            * param_space (ConfigSpace): ConfigSpace object.
+            * gaci (ACInterface): AC interface object.
+            * configuration_time (int, optional): Overall configuration time budget.
+            * n_trials (int, optional): Maximum number of engine evaluations.
+            * min_budget (int, optional): Minimum number of instances to use.
+            * max_budget (int, optional): Maximum number of instances to use.
+            * crash_cost (int, optional): Cost to use if the engine fails.
+            * planner_timelimit (int, optional): Maximum runtime per evaluation.
+            * n_workers (int, optional): Number of cores to utilize.
+            * instances (list, optional): Problem instance paths.
+            * instance_features (dict, optional): Instance names and lists of features.
+            * metric (str, optional): Optimization metric.
+            * popSize (int, optional): Population size of configs per generation (OAT).
+            * evlaLimit (int, optional): Maximum number of evaluations (OAT).
 
         """
 
