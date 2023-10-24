@@ -5,7 +5,11 @@ Planning engines
 
 LPG
 ---
-Content about LPG...
+**Support Features:**
+
+- classical and numeric state variables.
+- durative actions.
+
 
 Fast-Downward
 -------------
@@ -47,7 +51,8 @@ symk
 tamer
 ------
 
-Content about tamer...
+Tamer is a temporal planner that supports temporal action-based problems.
+
 
 pyperplan
 ---------
