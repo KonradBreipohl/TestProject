@@ -13,6 +13,8 @@ General functions
 
 Here is an overview of the general functions and attributes used by all automated algorithm configuration tools.
 
+These can be used to create custom automated algorithm configurators not included in this project.
+
 .. automodule:: up_ac.configurators
     :members:
 
