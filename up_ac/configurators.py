@@ -37,9 +37,10 @@ class Configurator():
         Print feedback from the engine.
 
         Parameters:
-        - engine (str): Name of the engine.
-        - instance (str): Name of the instance.
-        - feedback: Feedback from the engine.
+        -----------
+        engine (str) : Name of the engine.
+        instance (str) : Name of the instance.
+        feedback : Feedback from the engine.
         """
         print(f'** Feedback of {engine} on instance\n**' +
               f' {instance}\n** is {feedback}\n\n')
@@ -49,7 +50,8 @@ class Configurator():
         Save instance features.
 
         Parameters:
-        - instance_features (dict): Instance names and their features in lists.
+        -----------
+        instance_features (dict) : Instance names and their features in lists.
         """
         self.instance_features = instance_features
         print('\nSetting instance features.\n')
@@ -59,7 +61,9 @@ class Configurator():
         Save training instance set.
 
         Parameters:
-            train_set (list): List of instance paths.
+        -----------
+        train_set (list) : List of instance paths.
+
         """
         self.train_set = train_set
         print('\nSetting training instance set.\n')
@@ -69,7 +73,8 @@ class Configurator():
         Save test instance set.
 
         Parameters:
-            test_set (list): List of instance paths.
+        -----------
+        test_set (list) : List of instance paths.
         """
         self.test_set = test_set
         print('\nSetting testing instance set.\n')
@@ -80,14 +85,16 @@ class Configurator():
         Generate the function to run the engine and get feedback.
 
         Parameters:
-            gaci (ACInterface): Algorithm Configuration interface object.
-            engine (str): Engine name.
-            metric (str): Metric, either 'runtime' or 'quality'.
-            mode (str): Type of planning.
-            gray_box (bool, optional): True if gray box to be used.
+        -----------
+        gaci (ACInterface) : Algorithm Configuration interface object.
+        engine (str) : Engine name.
+        metric (str) : Metric, either 'runtime' or 'quality'.
+        mode (str) : Type of planning.
+        gray_box (bool, optional) : True if gray box to be used.
 
         Returns:
-            function or None: Planner feedback function or None if not supported.
+        --------
+        function or None : Planner feedback function or None if not supported.
         """
         if engine in self.capabilities[metric][mode]:
             self.metric = metric
@@ -109,21 +116,22 @@ class Configurator():
         Set up algorithm configuration scenario.
 
         Parameters:
-            engine (str): Engine name.
-            param_space (ConfigSpace): ConfigSpace object.
-            gaci (ACInterface): AC interface object.
-            configuration_time (int, optional): Overall configuration time budget.
-            n_trials (int, optional): Maximum number of engine evaluations.
-            min_budget (int, optional): Minimum number of instances to use.
-            max_budget (int, optional): Maximum number of instances to use.
-            crash_cost (int, optional): Cost to use if the engine fails.
-            planner_timelimit (int, optional): Maximum runtime per evaluation.
-            n_workers (int, optional): Number of cores to utilize.
-            instances (list, optional): Problem instance paths.
-            instance_features (dict, optional): Instance names and lists of features.
-            metric (str, optional): Optimization metric.
-            popSize (int, optional): Population size of configs per generation (OAT).
-            evlaLimit (int, optional): Maximum number of evaluations (OAT).
+        -----------
+        engine (str) : Engine name.
+        param_space (ConfigSpace) : ConfigSpace object.
+        gaci (ACInterface) : AC interface object.
+        configuration_time (int, optional) : Overall configuration time budget.
+        n_trials (int, optional) : Maximum number of engine evaluations.
+        min_budget (int, optional) : Minimum number of instances to use.
+        max_budget (int, optional) : Maximum number of instances to use.
+        crash_cost (int, optional) : Cost to use if the engine fails.
+        planner_timelimit (int, optional) : Maximum runtime per evaluation.
+        n_workers (int, optional) : Number of cores to utilize.
+        instances (list, optional) : Problem instance paths.
+        instance_features (dict, optional) : Instance names and lists of features.
+        metric (str, optional) : Optimization metric.
+        popSize (int, optional) : Population size of configs per generation (OAT).
+        evlaLimit (int, optional) : Maximum number of evaluations (OAT).
 
         """
 
@@ -136,11 +144,13 @@ class Configurator():
         Run the algorithm configuration.
 
         Parameters:
-            feedback_function (function, optional): Function to run engine and get feedback.
-            gray_box (bool, optional): True if gray box usage.
+        -----------
+        feedback_function (function, optional) : Function to run engine and get feedback.
+        gray_box (bool, optional) : True if gray box usage.
 
         Returns:
-            incumbent: The best configuration found during optimization.
+        --------
+        incumbent : The best configuration found during optimization.
         """
         if feedback_function is not None:
 
@@ -152,17 +162,19 @@ class Configurator():
         Evaluate performance of found configuration on training set.
 
         Parameters:
-            metric (str): Optimization metric.
-            engine (str): Engine name.
-            mode (str): Planning mode.
-            incumbent (dict): Parameter configuration to evaluate.
-            gaci: AC interface object.
-            planner_timelimit (int, optional): Max runtime per evaluation.
-            crash_cost (int, optional): Cost if engine fails.
-            instances (list, optional): Instance paths.
+        -----------
+        metric (str) : Optimization metric.
+        engine (str) : Engine name.
+        mode (str) : Planning mode.
+        incumbent (dict) : Parameter configuration to evaluate.
+        gaci : AC interface object.
+        planner_timelimit (int, optional) : Max runtime per evaluation.
+        crash_cost (int, optional) : Cost if engine fails.
+        instances (list, optional) : Instance paths.
 
         Returns:
-            float: Average performance on the instances.
+        -----------
+        float : Average performance on the instances.
         """
         if incumbent is not None:
             if not instances:
@@ -256,10 +268,11 @@ class Configurator():
         Save configuration in json file.
 
         Parameters:
-            path (str): Path where to save.
-            config (dict): Configuration to save.
-            gaci: AC interface object.
-            engine (str): Engine name.
+        -----------
+        path (str) :Path where to save.
+        config (dict) :Configuration to save.
+        gaci :AC interface object.
+        engine (str) :Engine name.
         """
         if config is not None:
             config = gaci.transform_conf_from_ac(engine, config)
