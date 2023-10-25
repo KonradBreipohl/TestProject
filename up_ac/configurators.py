@@ -109,7 +109,7 @@ class Configurator():
                      configuration_time=120, n_trials=400, min_budget=1,
                      max_budget=3, crash_cost=0, planner_timelimit=30,
                      n_workers=1, instances=[], instance_features=None,
-                     metric='runtime', popSize=128, evlaLimit=2147483647):
+                     metric='runtime', popSize=128, evalLimit=2147483647):
         """
         Set up algorithm configuration scenario.
 
@@ -141,8 +141,8 @@ class Configurator():
         :type metric: str, optional
         :param popSize: Population size of configs per generation (OAT), optional.
         :type popSize: int, optional
-        :param evlaLimit: Maximum number of evaluations (OAT), optional.
-        :type evlaLimit: int, optional
+        :param evalLimit: Maximum number of evaluations (OAT), optional.
+        :type evalLimit: int, optional
         """
 
         scenario = None
