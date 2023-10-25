@@ -84,17 +84,19 @@ class Configurator():
         """
         Generate the function to run the engine and get feedback.
 
-        Parameters
-        -----------
-            gaci (ACInterface) : Algorithm Configuration interface object.
-            engine (str) : Engine name.
-            metric (str) : Metric, either 'runtime' or 'quality'.
-            mode (str) : Type of planning.
-            gray_box (bool, optional) : True if gray box to be used.
+        :param gaci: Algorithm Configuration interface object.
+        :type gaci: ACInterface
+        :param engine: Engine name.
+        :type engine: str
+        :param metric: Metric, either 'runtime' or 'quality'.
+        :type metric: str
+        :param mode: Type of planning.
+        :type mode: str
+        :param gray_box: True if gray box to be used, optional.
+        :type gray_box: bool, optional
 
-        Returns
-        --------
-            function or None : Planner feedback function or None if not supported.
+        :return: Planner feedback function or None if not supported.
+        :rtype: function or None
         """
         if engine in self.capabilities[metric][mode]:
             self.metric = metric
