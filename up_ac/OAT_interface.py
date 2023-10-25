@@ -13,7 +13,22 @@ from ConfigSpace.conditions import (
 
 
 class OATInterface(GenericACInterface):
-    """OAT AC interface."""
+    """
+    OAT AC interface.
+
+    OAT does not handle forbidden parameter value combinations.
+    OAT can handle multiple parent and 1 child conditionals, but not one parent multiple children conditionals.
+    We naively just take the first one in the list.
+    OAT does not support conditionals that are conditional.
+    We leave them out naively.
+    OAT does not support conditionals with value ranges.
+    We naively only use the first value.
+
+    Note: Although this is suboptimal, invalid configurations will
+    lead to crash or bad results such that OAT will rate them
+    as subpar.
+    
+    """
 
     def __init__(self):
         """Initialize OAT interface."""
@@ -144,20 +159,6 @@ class OATInterface(GenericACInterface):
         :return: OAT parameter tree in XML format.
         :rtype: str
 
-        
-        [Additional Information]
-
-        OAT does not handle forbidden parameter value combinations.
-        OAT can handle multiple parent and 1 child conditionals, but not one parent multiple children conditionals.
-        We naively just take the first one in the list.
-        OAT does not support conditionals that are conditional.
-        We leave them out naively.
-        OAT does not support conditionals with value ranges.
-        We naively only use the first value.
-
-        Note: Although this is suboptimal, invalid configurations will
-        lead to crash or bad results such that OAT will rate them
-        as subpar.
         """
 
         param_file = '<?xml version="1.0" encoding="utf-8" ?>\n'
