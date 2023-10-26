@@ -9,6 +9,7 @@ LPG
 
 - classical and numeric state variables.
 - durative actions.
+- Supports the Oneshot Planner in both quality and runtime modes.
 
 
 Fast-Downward
@@ -16,6 +17,7 @@ Fast-Downward
 **Support Features:**
 
 - Classical planning support with full information, non-numeric, deterministic instantaneous actions.
+- Supports Oneshot and Anytime Planner engine in both quality and runtime modes.
 
 **Advantages:**
 
@@ -32,6 +34,7 @@ EnhSP
 **Support Features:**
 
 - Boolean and numeric state variables, actions, processes, and events (PDDL+ language).
+- Supports Oneshot Planner in both quality and runtime modes.
 
 **Advantages:**
 
@@ -47,11 +50,16 @@ symk
 **Support Features:**
 
 - State-of-the-art classical optimal and top-k planner based on symbolic search extending Fast Downward. It can find a single optimal plan or a set of k different best plans with the lowest cost for a given planning task.
+- Supported in the Oneshot and Anytime Planners in both quality and runtime modes.
 
 tamer
 ------
 
 Tamer is a temporal planner that supports temporal action-based problems.
+
+**Support Features:**
+
+- Supported in the Oneshot Planner in the runtime mode.
 
 
 pyperplan
@@ -62,6 +70,8 @@ pyperplan
 - Classical planning based on different search heuristics.
 - Action-based problems with hierarchical typing.
 - Supports the STRIPS PDDL fragment without action costs.
+- Supported in the Oneshot Planner in the runtime mode.
+
 
 **Advantages:**
 
@@ -81,6 +91,7 @@ fmap
 - Distributed heuristic search.
 - Forward partial-order planning scheme allowing parallel action planning among agents.
 - State-based estimates utilizing frontier state.
+- Supported in the Oneshot Planner in the runtime mode.
 
 **Advantages:**
 
