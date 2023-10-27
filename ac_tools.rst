@@ -54,7 +54,7 @@ To remove the OAT directory run:
 
     up_ac.utils.download_OAT.delete_OAT()
 
-For more details on OAT refer to `this page <https://docs.optano.com/algorithm.tuner/current/>`_.
+For more details on OAT refer to `the documentation <https://docs.optano.com/algorithm.tuner/current/>`_.
 
 
 .. automodule:: up_ac.OAT_configurator
@@ -71,7 +71,7 @@ SMAC3 (Sequential Model-Based Algorithm Configuration) optimizes algorithm param
 It then uses an aggressive racing mechanism to efficiently compare configurations and iteratively refine the model, directing the search towards regions of the space where better configurations are likely to be found.
 In the autoconfiguration Smac can also make use of instance features to improve the predictions.
 
-For more details on SMAC refer to `this page <https://automl.github.io/SMAC3/main/>`_.
+For more details on SMAC refer to `the SMAC3 GitHub <https://automl.github.io/SMAC3/main/>`_.
 
 .. automodule:: up_ac.Smac_configurator
     :members:    
@@ -80,7 +80,22 @@ For more details on SMAC refer to `this page <https://automl.github.io/SMAC3/mai
     :members:
    
 
+.. _genFunc:
 Generic configuration tools
 ---------------------------
 
-These are classes that can be used as a base to implement other configuration tools of choice.
+Here is an overview of the general functions and attributes used by all automated algorithm configuration tools.
+
+These can be used to create custom automated algorithm configurators not included in this project.
+
+.. automodule:: up_ac.configurators
+    :members:
+
+.. autoattribute:: up_ac.configurators
+    :members:
+
+.. automodule:: up_ac.AC_interface
+    :members:
+
+.. autoattribute:: up_ac.AC_interface
+    :members:

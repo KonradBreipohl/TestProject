@@ -7,22 +7,8 @@ For a detailed usage guide, please refer to the Jupyter notebook linked below:
 
 - `Colab notebook <https://colab.research.google.com/drive/1QW4FQMk0VXom-7SsQfNE8-nW4gxc74Ur?usp=sharing>`_
 
-.. _gen-func:
-General functions
+Generic configuration tools
 ------------------
 
-Here is an overview of the general functions and attributes used by all automated algorithm configuration tools.
-
-These can be used to create custom automated algorithm configurators not included in this project.
-
-.. automodule:: up_ac.configurators
-    :members:
-
-.. autoattribute:: up_ac.configurators
-    :members:
-
-.. automodule:: up_ac.AC_interface
-    :members:
-
-.. autoattribute:: up_ac.AC_interface
-    :members:
+Within this project there are also some generic configuration tools, which can be used as a base to implement other configuration tools of choice.
+More information on these can be found in the :ref:`genFunc` section.
